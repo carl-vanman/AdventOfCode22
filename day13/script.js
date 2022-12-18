@@ -1,31 +1,11 @@
-function isInteger(input){
-    return typeof input === "number";
-}
-
-function isLeftHandSideLower(leftHandSide, rightHandSide){
-    return leftHandSide < rightHandSide;
-}
-
-function isLeftHandSideHigher(leftHandSide, rightHandSide){
-    return leftHandSide > rightHandSide;
-}
-
-function isArray(input) {
-    return Array.isArray(input);
-}
-
-function isUndefined(input) {
-    return input === undefined;
-}
-
-function isEqual(leftHandSide, rightHandSide){
-    return leftHandSide === rightHandSide;
-}
-
-
-function totalScore(scoreList) {
-    return scoreList.reduce( (acc, curr) =>  ( acc + curr ), 0);
-}
+import { 
+    isInteger, 
+    isLeftHandSideLower, 
+    isLeftHandSideHigher, 
+    isArray, 
+    isUndefined, 
+    isEqual, 
+    totalScore } from "./helperFunctions.js"
 
 let indexCounter = 0;
 const score = [];
